@@ -88,7 +88,7 @@ header {
 }
 
 .sect-1 {
-    height: 100vh;
+    min-height: 100vh;
     padding:  6rem 8rem;
     background-color: var(--bckgrd);
 }
@@ -112,4 +112,26 @@ header {
     justify-content: end;
     width: 50%;
     padding-left: 6rem;
+}
+
+.about-images {
+    padding-top: 3rem;
+    width: 100%;
+}
+
+.about-images #canvas-img {
+    min-height: 34vh;
+    border:1px solid black;
+    margin: 2rem 0;
+}
+
+#canvas-img.pic1 {
+    background-image: url("/imgs/_DSC4003.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#canvas-img.pic2 {
+    
 }
