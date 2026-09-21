@@ -6,8 +6,22 @@
     font-family: var(--text);
 }
 
+a:link{
+    color: var(--sec-bckgrd);
+    text-decoration: none;
+}
+
+a:hover{
+    color:var(--primary-color);
+}
+
+a:visited{
+    color: var(--sec-bckgrd);
+}
+
 :root{
     --primary-font: 'Manrope', sans-serif;
+    --secondary-font: 'Abril Fatface', sans-serif;
     --text: 'Inter', sans-serif;
     --primary-color: #bcccd8;
     --secondary-color: #3b0510;
@@ -53,6 +67,20 @@ header {
     display: none;
 }
 
+.nav-items.active{
+    display:flex;
+    flex-direction: column;
+    min-height: 5rem;
+    min-width: 10rem;
+    color: #ffffff;
+    text-align:right;
+    align-items: end;
+}
+
+.nav-items.active .nav-item{
+    padding:1rem
+}
+
 
 
 .hero {
@@ -78,36 +106,35 @@ header {
 }
 
 .hero-content h1 {
-    font-family: var(--primary-font);
+    font-family: var(--secondary-font);
     color: var(--bckgrd);
     font-size: clamp(5rem, 20vw, 20rem);
     margin: 0;
     line-height: 0.7;
-    
 
 }
 
-.sect-1 {
+.sect-1, .sect-2 {
     min-height: 100vh;
     padding:  6rem 8rem;
     background-color: var(--bckgrd);
 }
 
-.sect-1 .about {
+.sect-1 .about, .sect-2 .contact {
     display: flex;
     align-items: center;
 
 }
 
-.sect-1 h2 {
+.sect-1 h2, .sect-2 h2 {
     width: 50%;
-    font-family: var(--primary-font);
+    font-family: var(--secondary-font);
     font-size: clamp(2.5rem, 6vw, 6rem);
     color: var(--secondary-color);
 
 }
 
-.about p{
+.about p, .contact p{
     display: flex;
     justify-content: end;
     width: 50%;
@@ -121,8 +148,7 @@ header {
 
 .about-images #canvas-img {
     min-height: 34vh;
-    border:1px solid black;
-    margin: 2rem 0;
+    margin: 1rem 0;
 }
 
 #canvas-img.pic1 {
@@ -132,6 +158,112 @@ header {
     background-repeat: no-repeat;
 }
 
-#canvas-img.pic2 {
-    
+#canvas-img.pic3 {
+    background-image: url("/imgs/_DSC4008.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#canvas-img.pic2{
+    background-image: url("/imgs/final.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    margin: 4rem auto;
+}
+
+
+
+input[type=text], select, input[type=email], input[type=tel]{
+    width: 100%;
+    padding: 12px;
+    resize:vertical;
+    box-sizing: border-box;
+    margin: 0.5rem 1rem;
+}
+
+.half, input[type=email].half, input[type=tel].half {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+textarea {
+  width: 98.1%; /*esto no puede ser así*/
+  margin: 0.5rem 1rem;
+  padding: 12px;
+}
+
+input[type=text]{
+    width: 50%;
+}
+
+.contact-form form button {
+    margin: 0.5rem 0.9rem;
+    padding: 12px;
+    border-radius: 6px;
+    color: #ffffff;
+    font-family: var(--text);
+    background: var(--secondary-color);
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+footer{
+    background: #221516;
+    padding: 6rem 8rem 1rem 8rem;
+}
+
+.first{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    color: var(--sec-bckgrd);
+}
+
+.first .contact-info{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    padding: 2rem 1rem;
+}
+
+
+.contact-info p {
+  padding: 0.5em;
+}
+
+.tabs {
+  width: 50%;
+  display: flex;
+  justify-content: end;
+  padding: 0.5em;
+}
+
+.tabs .nav-item {
+  display: inline;
+  padding: 0.5em;
+}
+
+.last {
+  color: var(--sec-bckgrd);
+  display: flex;
+  flex-direction: row;
+  padding: 6rem 0 1rem 0;
+  justify-content: space-between;
+}
+
+.last .logo span {
+  font-family: var(--secondary-font);
+  font-size: 2rem;
+}
+
+.last {
+  align-items: center;
 }

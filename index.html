@@ -10,7 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
 
 
 
@@ -46,7 +47,7 @@
         </div>
     </div>
 
-    <div class="sect-1">
+    <div id="about" class="sect-1">
        
         <div class="about">
             <h2>About</h2>
@@ -67,7 +68,64 @@
             </div>
         </div>
     </div>
+
+    <div id="contact" class="sect-2">
+        <div class="contact">
+            <h2>Contact</h2>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto officia eius accusantium cupiditate voluptates eaque saepe beatae a facere officia odio nesciunt totam quidem tempora in quas, at corporis, atque aspernatur neque magni.
+            </p>
+        </div>
+        <div class="contact-form">
+            <form id="form" action="/pages/form-conf.html" onsubmit="toSubmit()"">
+                <div class="half">
+                    <input type="text" placeholder="Nombre" id="usName">
+                    <input type="text" placeholder="Apellidos" id="usLastName">
+                </div>
+                <div class="half">
+                    <input type="email" placeholder="Correo Electrónico" id="usEmail">
+                    <input type="tel" placeholder="Teléfono" id="usPhone">
+                </div>
+
+                <textarea placeholder="Mensaje" id="usMessage"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="first">
+            <div class="contact-info">
+                <p>Rosenborggade 15, 1st floor <br> 1130 Copenhagen K</p>
+                <p>info@mons00n.com</p>
+                <p>+45 986 986 986</p>
+            </div>
+            <div class="tabs">
+                <ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Ab0ut</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#works">Work5</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Cont4ct</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="last">
+            <div class="copyright">
+                <p>&copy; 2023 Mons00n. All rights reserved.</p>
+            </div>
+            <div class="logo">
+                <span>Mons00n</span>
+            </div>
+        </div>
+
+    </footer>
     
-    <script src="./js/script.js"></script>
+    <script src="/js/script.js"></script>
 </body>
 </html>
