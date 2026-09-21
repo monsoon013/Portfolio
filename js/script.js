@@ -26,7 +26,7 @@
   const savedData = localStorage.getItem("dataForm");
 
   if(savedData){
-    const data = JSON.parse(savedData);
-    $("#showName").text(data.name);
+    const datos = JSON.parse(savedData);
+    $("#showName").text(datos.name);
   }
 })
