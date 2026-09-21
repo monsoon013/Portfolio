@@ -1,5 +1,9 @@
 *, *::before, *::after{
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    overflow-x: none;
+    font-family: var(--text);
 }
 
 :root{
@@ -10,4 +14,38 @@
     --bckgrd: #e1dbd7;
     --sec-bckgrd: #f4f4f1;
     --font: #221516; 
+}
+
+
+
+
+.hero {
+    height: 100vh;
+    background-image: url("/imgs/hero.jpg");
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+
+.hero-content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content h1 {
+    font-family: var(--primary-font);
+    color: var(--bckgrd);
+    font-size: 20rem;
+    margin: 0 0 -0.9em;
+
+}
+
+.sect-1 {
+    background-color: var(--bckgrd);
 }
