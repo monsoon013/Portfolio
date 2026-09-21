@@ -1,0 +1,13 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-font: 'Manrope', sans-serif;
+    --text: 'Inter', sans-serif;
+    --primary-color: #bcccd8;
+    --secondary-color: #3b0510;
+    --bckgrd: #e1dbd7;
+    --sec-bckgrd: #f4f4f1;
+    --font: #221516; 
+}
