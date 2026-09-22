@@ -123,6 +123,7 @@ header {
 
 .sect-1 .about, .sect-2 .contact {
     display: flex;
+    min-width: 1140px !important;
     align-items: center;
 
 }
@@ -183,7 +184,7 @@ header {
 
 .sect-2{
     background-color: var(--bckgrd);
-    padding:  6vh 8vh 6vh 8vh;
+    padding: 6vh 8vh 6vh 8vh;
 }
 
 
