@@ -8,4 +8,6 @@ export function header(){
     hamburger.addEventListener('click', () => {
         navLinks.classList.toggle('active');
     });
+
+    
 }

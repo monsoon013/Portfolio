@@ -25,10 +25,12 @@ export function showData(){
     const showEmail = document.querySelector("#showEmail");
     const showPhone = document.querySelector("#showPhone");
     const showMess = document.querySelector("showMess");
+    
 
 
     if(savedData){
         const datos = JSON.parse(savedData);
+        console.log(savedData);
         $("#showName").text(datos.name);
         $(".name").text(datos.name);
         $("#showSur").text(datos.sur);
