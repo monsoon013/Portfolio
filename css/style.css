@@ -47,7 +47,7 @@ header {
 }
 
 .menu-icon-toggle {
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 5px;
     background: none;
@@ -64,7 +64,9 @@ header {
 }
 
 .nav-items {
-    display: none;
+    display: inline;
+    
+    
 }
 
 .nav-items.active{
@@ -86,7 +88,7 @@ header {
 .hero {
     height: 100vh;
     min-height: 100vh;
-    background-image: url("/imgs/flor.jpg");
+    background-image: url("/imgs/hero.webp");
     background-position: center;
     background-repeat: no-repeat; 
     background-size: cover;
@@ -160,11 +162,11 @@ header {
     height: auto;
     width: 75%;
     margin: 1vh;
-    aspect-ratio: 13/16;
+    aspect-ratio: 11/16;
 }
 
 #canvas-img.pic1 {
-    background-image: url("/imgs/_DSC4003.jpg");
+    background-image: url("/imgs/impala.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -175,7 +177,7 @@ header {
 }
 
 #canvas-img.pic3 {
-    background-image: url("/imgs/_DSC4008.jpg");
+    background-image: url("/imgs/snow-leopard.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -183,7 +185,7 @@ header {
 }
 
 #canvas-img.pic2{
-    background-image: url("/imgs/final.jpg");
+    background-image: url("/imgs/wolf.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

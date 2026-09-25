@@ -24,7 +24,7 @@ export function showData(){
     const showSur = document.querySelector("#showSur");
     const showEmail = document.querySelector("#showEmail");
     const showPhone = document.querySelector("#showPhone");
-    const showMess = document.querySelector("showMess");
+    const showMess = document.querySelector("#showMess");
     
 
 
