@@ -14,6 +14,7 @@ export function innitForm(){
 
     localStorage.setItem("dataForm", JSON.stringify(data));
     window.location.href = "/pages/form-conf.html";
+    
   })
 };
 
