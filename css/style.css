@@ -162,7 +162,7 @@ header {
 }
 
 #canvas-img.pic1 {
-    background-image: url("/imgs/impala.jpg");
+    background-image: url("../imgs/impala.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -173,7 +173,7 @@ header {
 }
 
 #canvas-img.pic3 {
-    background-image: url("/imgs/snow-leopard.jpg");
+    background-image: url("../imgs/snow-leopard.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -181,7 +181,7 @@ header {
 }
 
 #canvas-img.pic2{
-    background-image: url("/imgs/wolf.jpg");
+    background-image: url("../imgs/wolf.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
