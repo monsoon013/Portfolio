@@ -36,13 +36,8 @@ header {
     justify-content: center;
     padding: 1rem 1rem;
     position: absolute;
-    /*top: 2rem;
-    right: 2rem;
-    left: auto;*/
-    background: rgba(59, 5, 16, 0.75);
     border-radius: 8px;
     z-index: 10;
-    border: 4px solid var(--secondary-color);
 
 }
 
@@ -89,7 +84,7 @@ header {
 .hero {
     height: 100vh;
     min-height: 100vh;
-    background-image: url("/imgs/hero.webp");
+    background-image: url("../imgs/hero.webp");
     background-position: center;
     background-repeat: no-repeat; 
     background-size: cover;
