@@ -127,8 +127,15 @@ header {
     display: flex;
     flex-direction: column;
     align-items: start;
-    
+    justify-content: center;    
 
+}
+
+.sect-2 .contact {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .sect-1 h2, .sect-2 h2 {
@@ -136,13 +143,17 @@ header {
     font-family: var(--secondary-font);
     font-size: clamp(2rem, 6vw, 6rem);
     color: var(--secondary-color);
-
+    padding-left:6vh;
 }
 
 .about p, .contact p{
     display: flex;
 
     padding-left: 6vh;
+}
+
+.contact p {
+    width: 50%;
 }
 
 .about-images {
@@ -191,7 +202,7 @@ header {
 .contact-form {
     display: flex;
     flex-direction: column;
-    margin: 4vh auto;
+    margin: 7vh 4vh;
 }
 
 
@@ -292,12 +303,29 @@ footer{
 
 
 @media (max-width:767px){
+    
+    header {
+        height: 8vh !important;;
+        width: 65vh !important;;
+    }
   #about{
     flex-direction: column;
     
     display: flex;
     width: 100%;
   }
+    .about-images{
+        display: flex;
+        flex-direction: column;
+        padding: 10vh 0;
+       
+    }
+    
+    .about-images #canvas-img{
+        width:  100%;
+        height: auto;
+        padding: 0;
+    }
   .sect-1 .about {
     width: 100%;
     padding: unset;
@@ -307,6 +335,9 @@ footer{
   
   .sect-1 {
     padding: 13vh 10vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
   }
   
   .sect-1 .about h2{
@@ -318,6 +349,21 @@ footer{
     padding: unset !important;
     
   }
+    .sect-2 .contact{
+        display: flex;
+        flex-direction: column;
+        padding: 0 !important;
+        
+        
+    }
+    
+    .sect-2 .contact h2{
+        width: 100%
+    }
+    
+    .sect-2 .contact p {
+        width: 100%;
+    }
   
 }
 
@@ -325,16 +371,17 @@ footer{
 header {
   right: 60vh;
   position: fixed;
-  background-color: transparent;
-  height: 100px;
-  width: 70vh;
-  top: 2vh;
+  background: var(--secondary-color);
+  height: 9vh;
+  width: 75vh;
+  top: -0.5vh;
   margin-left: auto;
   margin-right: auto;
   left: 0;
   right: 0;
   border-bottom: 1px solid white;
   border-radius: 0 0 100px 100px;
+  overflow-y:hidden;
 }
 
 ul {
