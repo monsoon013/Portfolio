@@ -1,0 +1,19 @@
+services:
+  xampp:
+    image: tomsik68/xampp
+    ports:
+      - "44162:22"
+      - "41063:80"
+      - "41064:3306"
+    volumes:
+      # Sitios web
+      - ./xampp/ajpdsoft:/www/portfolio
+ 
+      # Configuración apache
+      - ./xampp/my_apache_conf/:/opt/lampp/apache2/conf.d
+      
+    restart: always
+
+    #El fichero de configuración general de PHP se encuentra en:
+
+      #/opt/lampp/etc/php.ini
