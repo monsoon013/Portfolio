@@ -83,17 +83,17 @@
             </p>
         </div>
         <div class="contact-form">
-            <form id="form"> <!-- TEMPORAL con htmlspecialchars() evitamos hackeo por script-->
+            <form id="form" name="frmPrueba" method="post" action="form-validation.php"> 
                 <div class="half">
-                    <input type="text" placeholder="Nombre" id="usName">
-                    <input type="text" placeholder="Apellidos" id="usLastName">
+                    <input type="text" name='userName' placeholder="Nombre" id="usName">
+                    <input type="text" name='surName' placeholder="Apellidos" id="usLastName">
                 </div>
                 <div class="half">
-                    <input type="email" placeholder="Correo Electrónico" id="usEmail">
-                    <input type="tel" placeholder="Teléfono" id="usPhone">
+                    <input type="email" name='email' placeholder="Correo Electrónico" id="usEmail">
+                    <input type="tel" name='phone' placeholder="Teléfono" id="usPhone">
                 </div>
 
-                <textarea placeholder="Mensaje" id="usMessage"></textarea>
+                <textarea name='message' placeholder="Mensaje" id="usMessage"></textarea>
                 <button type="submit">Enviar</button>
             </form>
         </div>
