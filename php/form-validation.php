@@ -34,7 +34,7 @@
         if(empty($_POST['phone']))
             $duendeError[] = "Debe especificar el teléfono";
         else {
-            if(preg_match($))
+            if()
         }
     }
 ?>    
