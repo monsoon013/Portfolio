@@ -1,0 +1,15 @@
+#Permite realizar cambios y actualizar el contenedor sin necesidad de tener que borrarlo y 
+#levantarlo de nuevo
+services:
+  php:
+    build:
+      context: ./
+      dockerfile: Dockerfile 
+    container_name: server-php
+    restart: always
+    ports:
+      - 3000:80 #puerto interno de apache 80
+    volumes: 
+      - ./:/var/www/html #empareja la carpeta interna html con nuestra carpeta del proyecto
+volumes:
+  html: {}

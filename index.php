@@ -6,13 +6,13 @@
     <title>Mons00n - full stack web developer</title>
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script> 
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
-
+    
 
 
 </head>
@@ -83,7 +83,7 @@
             </p>
         </div>
         <div class="contact-form">
-            <form id="form" name="frmPrueba" method="post" action="form-validation.php"> 
+            <form method="post" action="form-validation.php" > 
                 <div class="half">
                     <input type="text" name='userName' placeholder="Nombre" id="usName">
                     <input type="text" name='surName' placeholder="Apellidos" id="usLastName">
@@ -94,7 +94,7 @@
                 </div>
 
                 <textarea name='message' placeholder="Mensaje" id="usMessage"></textarea>
-                <button type="submit">Enviar</button>
+                <button type="submit" value='Enviar' name='enviar'>Enviar</button>
             </form>
         </div>
 

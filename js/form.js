@@ -1,4 +1,4 @@
-export function innitForm(){
+/*export function innitForm(){
     const $form = document.querySelector("#form");
     if (!$form) return;
     $("#form").on("submit", function(e){
@@ -39,4 +39,4 @@ export function showData(){
         $("#showPhone").text(datos.tel);
         $("#showMess").text(datos.mess);
     }
-}
+}*/
